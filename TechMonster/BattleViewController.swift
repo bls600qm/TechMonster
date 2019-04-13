@@ -12,6 +12,7 @@ class BattleViewController: UIViewController {
 
     var enemy: Enemy!
     var player: Player!
+    var enemyAttackTimer: Timer!
     
     @IBOutlet weak var backGroundImageView: UIImageView!
     @IBOutlet weak var attackButton: UIButton!
@@ -41,10 +42,10 @@ class BattleViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        startButtle()
+        startBattle()
     }
     
-    func startButtle() {
+    func startBattle() {
         TechDraUtil.playBGM(fileName: "BGM_battle001")
         
         enemy = Enemy()
@@ -56,6 +57,8 @@ class BattleViewController: UIViewController {
         //攻撃ボタン
         attackButton.isHidden = false
         
+        enemyAttackTimer = Timer.scheduledTimer(timeInterval: enemy.attackInterval, target: self, selector: #selector(self.enemyAttack), userInfo: nil, repeats: true)
+
     }
     //攻撃ボタン
     @IBAction func playerAttack() {
@@ -75,6 +78,8 @@ class BattleViewController: UIViewController {
         TechDraUtil.stopBGM()
         
         attackButton.isHidden = true //攻撃ボタン隠す
+        
+        enemyAttackTimer.invalidate()
         
         let finishedMessage: String
         if winPlayer == true {
