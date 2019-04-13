@@ -30,6 +30,8 @@
 		97AD323E22622B58004C488F /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD322C22622B58004C488F /* Enemy.swift */; };
 		97AD323F22622B58004C488F /* TechDraUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD322D22622B58004C488F /* TechDraUtil.swift */; };
 		97AD324022622B58004C488F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD322E22622B58004C488F /* Player.swift */; };
+		97AD324222622D46004C488F /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD324122622D46004C488F /* LobbyViewController.swift */; };
+		97AD324422622D9A004C488F /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD324322622D9A004C488F /* BattleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		97AD322C22622B58004C488F /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		97AD322D22622B58004C488F /* TechDraUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechDraUtil.swift; sourceTree = "<group>"; };
 		97AD322E22622B58004C488F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		97AD324122622D46004C488F /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		97AD324322622D9A004C488F /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				97AD320722622A96004C488F /* AppDelegate.swift */,
+				97AD324122622D46004C488F /* LobbyViewController.swift */,
+				97AD324322622D9A004C488F /* BattleViewController.swift */,
 				97AD320922622A96004C488F /* ViewController.swift */,
 				97AD320B22622A96004C488F /* Main.storyboard */,
 				97AD320E22622A97004C488F /* Assets.xcassets */,
@@ -236,9 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97AD324422622D9A004C488F /* BattleViewController.swift in Sources */,
 				97AD320A22622A96004C488F /* ViewController.swift in Sources */,
 				97AD323F22622B58004C488F /* TechDraUtil.swift in Sources */,
 				97AD320822622A96004C488F /* AppDelegate.swift in Sources */,
+				97AD324222622D46004C488F /* LobbyViewController.swift in Sources */,
 				97AD324022622B58004C488F /* Player.swift in Sources */,
 				97AD323E22622B58004C488F /* Enemy.swift in Sources */,
 			);
