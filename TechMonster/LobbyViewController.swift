@@ -58,6 +58,16 @@ class LobbyViewController: UIViewController {
             battleVC.player = player
         }
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        TechDraUtil.playBGM(fileName: "lobby")
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        TechDraUtil.stopBGM()
+    }
     
 
     /*

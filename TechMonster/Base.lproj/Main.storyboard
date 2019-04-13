@@ -36,6 +36,9 @@
                                 <state key="normal" title="冒険に行く" backgroundImage="gold_button.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtle" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5a-GF-iVk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-fi-Dzx">
                                 <rect key="frame" x="48" y="173" width="49" height="24"/>
@@ -68,6 +71,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="levelLabel" destination="8jS-Gl-TvI" id="vAZ-pa-ShE"/>
+                        <outlet property="nameLabel" destination="1iN-fi-Dzx" id="XGg-lW-Mhg"/>
+                        <outlet property="staminaBar" destination="VIl-am-vY9" id="hiR-Hv-F9D"/>
                         <segue destination="1IT-Vk-KBP" kind="presentation" identifier="startBattle" modalTransitionStyle="crossDissolve" id="nvn-Lh-7MJ"/>
                     </connections>
                 </viewController>
@@ -134,6 +140,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8Eo-q0-UO4"/>
                     </view>
+                    <connections>
+                        <outlet property="attackButton" destination="BI3-Kw-DDf" id="lE3-Pe-bKe"/>
+                        <outlet property="backGroundImageView" destination="Xfa-lv-fmF" id="fdd-zh-v7p"/>
+                        <outlet property="enemyHPBar" destination="W7t-7x-iqw" id="Jjk-6L-HGN"/>
+                        <outlet property="enemyImageView" destination="2Bo-KF-2qK" id="22G-nf-dvB"/>
+                        <outlet property="enemyNameLabel" destination="VUf-Ri-cwn" id="04G-Iy-dKl"/>
+                        <outlet property="playerHPBar" destination="TN7-6h-81d" id="ClR-9G-dvr"/>
+                        <outlet property="playerImageView" destination="3g8-cA-XK2" id="ock-cz-ZKt"/>
+                        <outlet property="playerNameLabel" destination="b3G-Hj-WXP" id="GC0-c5-jcl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWy-fB-EIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
